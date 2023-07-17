@@ -37,7 +37,7 @@ body {
     -webkit-appearance: none;
     appearance: none;
     height: 5px;
-    background: linear-gradient(to right, #a2ffaa 50%, #18171f 50%);
+    background: var(--dark-black);
 
     opacity: 0.7;
     -webkit-transition: .2s;

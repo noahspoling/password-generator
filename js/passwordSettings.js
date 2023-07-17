@@ -8,7 +8,7 @@ export const passwordSettings = (state) =>
             <p id="lengthLabel">Character Length</p>
             <p id="lengthOutput">${() => state.characterLength}</p>
         </div>
-        <input id="passwordLengthSlider" type="range" min="0" max="50" value="25">
+        <input id="passwordLengthSlider" type="range" min="0" max="32" value="0">
         <div id="checkboxGroup">
             <label class="checkbox"> Include Uppercase Letters 
                 <input type="checkbox" id="checkUpper">

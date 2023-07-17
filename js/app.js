@@ -3,7 +3,7 @@ import { passwordOutput } from "./passwordOutput.js"
 import { passwordSettings } from "./passwordSettings.js"
 
 export const state = reactive({
-    characterLength: 25,
+    characterLength: 0,
     isUpper: false,
     isLower: false,
     isNumber: false,
