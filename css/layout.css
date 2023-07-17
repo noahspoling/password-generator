@@ -1,0 +1,59 @@
+/* LAYOUT SETTINGS ALL DEVICES */
+
+#mainWindow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#pageTitle {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#pageTitle, #passwordOutputWindow, #passwordSettingsWindow {
+    margin: auto;
+    transition: max-width 0.5s ease, min-width 0.5s ease; 
+}
+
+
+/* LAYOUT PASSWORD SETTINGS */
+
+#characterLengthOutputInfoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#passwordLengthSlider {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* LAYOUT SETTINGS MOBILE DEVICES */
+    #pageTitle, #passwordOutputWindow, #passwordSettingsWindow {
+        max-width: 90%;
+        min-width: 90%;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* LAYOUT SETTINGS TABLET DEVICES */
+    #pageTitle, #passwordOutputWindow, #passwordSettingsWindow {
+        max-width: 70%;
+        min-width: 70%;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* LAYOUT SETTINGS DESKTOP DEVICES */
+
+    #pageTitle, #passwordOutputWindow, #passwordSettingsWindow {
+        max-width: 50%;
+        min-width: 50%;
+        padding: 2rem;
+    }
+}

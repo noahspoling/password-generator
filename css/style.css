@@ -1,0 +1,94 @@
+:root {
+    --mint: #a2ffaa;
+    --pale-grey: #e5e4e9;
+    --dark-grey: #24232b;
+    --black: #18171f;
+    --dark-black: #0c0b11;
+    --pale-gold: #f7cb65;
+    --red: #ff6262;
+}
+
+body {
+    background: var(--dark-black);
+}
+
+* {
+    color: var(--pale-grey);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pageTitle {
+    font-size: 2rem;
+    color: var(--dark-grey);
+}
+
+#passwordOutputWindow {
+    background-color: var(--dark-grey);
+}
+
+
+/* STYLE PASSWORD SETTINGS */
+
+#passwordSettingsWindow {
+    background: var(--dark-grey);
+}
+
+#passwordLengthSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #a2ffaa 50%;
+
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#passwordLengthSlider:hover {
+    opacity: 1;
+}
+
+#lengthLabel {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+}
+#lengthOutput {
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--mint);
+}
+
+#passwordLengthSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--pale-grey);
+    width: 15px;
+    height: 15px;
+
+}
+
+#passwordLengthSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--pale-grey);
+    cursor: pointer; /* Cursor on hover */
+}
+
+#passwordLengthSlider::-webkit-slider-thumb:hover, #passwordLengthSlider::-webkit-slider-thumb:active {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--black);
+    width: 15px;
+    height: 15px;
+
+}
+
+#passwordLengthSlider::-moz-range-thumb:hover, #passwordLengthSlider::-moz-range-thumb:active {
+    width: 25px;
+    height: 25px;
+    background: var(--black);
+    cursor: pointer; /* Cursor on hover */
+}
