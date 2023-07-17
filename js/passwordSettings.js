@@ -10,8 +10,28 @@ export const passwordSettings = (state) =>
             <p id="lengthLabel">Character Length</p>
             <p id="lengthOutput">${() => state.characterLength}</p>
         </div>
-        <input id="passwordLengthSlider" type="range" min="1" max="50" value="50">
-        <div id=></div>
+        <input id="passwordLengthSlider" type="range" min="0" max="50" value="50">
+        <div id="checkboxGroup">
+            <label class="checkbox"> Include Uppercase Letters 
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox"> Include Lowercase Letters
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox"> Include Numbers
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox"> Include Symbols
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div id="passwordStrengthWindow">
+
+        </div>
     </div>
 `
 

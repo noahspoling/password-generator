@@ -16,7 +16,16 @@
     transition: max-width 0.5s ease, min-width 0.5s ease; 
 }
 
+#checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+}
 
+.checkboxItem > input:active {
+    background-color: yellowgreen;
+}
 /* LAYOUT PASSWORD SETTINGS */
 
 #characterLengthOutputInfoBox {
