@@ -19,7 +19,7 @@ body {
 
 #pageTitle {
     font-size: 2rem;
-    color: var(--dark-grey);
+    color: var(--pale-grey);
 }
 
 #passwordOutputWindow {
@@ -153,7 +153,10 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
+#generateButton {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 button {
     border: none;
     width: 100%;

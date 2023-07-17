@@ -33,7 +33,7 @@ export const passwordSettings = (state) =>
                 ${() => renderPasswordStrength()}
             </div>
         </div>
-        <button id="generateButton">Generate -></button>
+        <button id="generateButton">Generate &#8594</button>
     </div>
 `
 
