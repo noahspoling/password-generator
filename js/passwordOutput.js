@@ -4,7 +4,7 @@ import { state } from "./app.js";
 export const passwordOutput = (state) => html`
     <div id="passwordOutputWindow">
         <h1>${() => state.password}</h1>
-        <button id="imageButton"><img src="password-generator/docs/assets" alt="Copy"/></button>
+        <button id="imageButton"><img src="/password-generator/docs/assets" alt="Copy"/></button>
     </div>
 `
 

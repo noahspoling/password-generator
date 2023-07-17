@@ -172,7 +172,13 @@ button:hover {
 
 /* COPY PASSWORD BUTTON */
 
-
+#imageButton {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+}
 
 #imageButton img {
     height: 50px; 
