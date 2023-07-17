@@ -16,11 +16,23 @@
     transition: max-width 0.5s ease, min-width 0.5s ease; 
 }
 
+#passwordOutputWindow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#imageButton, #imageButton > * {
+    max-width: 50px; min-height: 50px;
+    max-height: 50px; min-width: 50px;
+    text-align: center;
+}
+
 #checkboxGroup {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 1rem;
+    padding-top: 2rem;
 }
 
 .checkboxItem > input:active {
@@ -32,12 +44,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #passwordLengthSlider {
     width: 100%;
 }
 
+#passwordStrengthWindow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#passwordStrengthBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#strengthIndicatorsBox {
+    display: flex;
+    flex-direction: row;
+}
 @media only screen and (max-width: 600px) {
 
     /* LAYOUT SETTINGS MOBILE DEVICES */
